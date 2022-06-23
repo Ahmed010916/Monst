@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/monst.css" />
+  <title>Monst | Template</title>
+</head>
+
+<body>
+  <!-- Start Nav -->
+  <nav class="navbar navbar-light sticky-top">
+    <div class="container">
+      <img class="navbar-brand" style="width: 130px; max-width: 100%"
+        src="assets/images/monst-logo.svg" alt="logo" />
+      <div id="list" class="list d-none d-lg-flex">
+        <ul class="main-ul d-flex m-0 fw-bold">
+          <li class="mx-xl-4 mx-md-3 menup">
+            <a href="#">Home</a>
+            <ul id="drop-menu-1" class="nav-drop-menu d-block home drop-menu">
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Landing Page 1</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Landing Page 2</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Landing Page 3</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Landing Page 4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mx-xl-4 mx-md-3"><a href="#">About Us</a></li>
+          <li class="mx-xl-4 mx-md-3 menup">
+            <a href="#">Services</a>
+            <ul id="drop-menu-2" class="d-block home drop-menu">
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Services Default</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Services Style 01</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Service Details</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mx-xl-4 mx-md-3 menup">
+            <a href="#">Company</a>
+            <ul id="drop-menu-3" class="d-block home drop-menu">
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Company</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Portfolio</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Team</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Testimonials</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Pricing</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Faqs</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">404</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mx-xl-4 mx-md-3 menup">
+            <a href="#">Blog</a>
+            <ul id="drop-menu-4" class="d-block home drop-menu">
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Blog</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Blog Default</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Blog Style 01</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Blog Style 02</a>
+              </li>
+              <li class="my-2">
+                <a class="item p-3 my-3 fw-normal" href="#">Single Post</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mx-xl-4 mx-md-3"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="btn-auth d-none d-lg-flex">
+        <div class="btn btn-two login mx-3">Login</div>
+        <div class="btn btn-one sign-up">Sign Up</div>
+      </div>
+      <!-- Start Mega menu left -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit"> Search </button>
+          </form>
+        </div>
+      </div>
+      <!-- End Mega menu left -->
+    </div>
+  </nav>
+  <!-- End Nav -->
+  <!-- Start section-header -->
+  <section class="section-header">
+    <div class="container">
+      <div class="content lh-lg">
+        <h1> Committed to People <br /> Committed <span> to the Future</span>
+        </h1>
+        <p class="py-2">We are <span>Monst</span>, a Creative</p>
+        <div class="btns d-flex">
+          <div class="btn btn-one sign-up py-2 px-4">Key Features</div>
+          <div class="btn btn-two login py-2 px-4 mx-4">How We Work?</div>
+        </div>
+      </div>
+      <div class="ft-content">
+        <div class="footer-content">
+          <img src="assets/images/pattern.webp" alt="pattern" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End section-header -->
+  <!-- Start about -->
+  <div class="about">
+    <div class="container">
+      <div class="content row justify-content-center">
+        <div class="col min-div w-auto my-1">
+          <div class="row content-row">
+            <div class="svg col">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings"
+                width="70" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="#60a5fa"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <desc> Download more icon variants from https://tabler-icons.io/i/settings </desc>
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
+                </path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <div class="body col mx-3">
+              <h2>+256</h2>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col min-div w-auto my-1">
+          <div class="row content-row">
+            <div class="svg col">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-heart-handshake" width="70" height="50"
+                viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572">
+                </path>
+                <path
+                  d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25">
+                </path>
+                <path d="M12.5 15.5l2 2"></path>
+                <path d="M15 13l2 2"></path>
+              </svg>
+            </div>
+            <div class="body col mx-3">
+              <h2>+256</h2>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col min-div w-auto my-1">
+          <div class="row content-row">
+            <div class="svg col">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-affiliate"
+                width="70" height="50" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275"></path>
+                <path d="M11.683 12.317l5.759 -5.759"></path>
+                <circle cx="5.5" cy="5.5" r="1.5"></circle>
+                <circle cx="18.5" cy="5.5" r="1.5"></circle>
+                <circle cx="18.5" cy="18.5" r="1.5"></circle>
+                <circle cx="8.5" cy="15.5" r="4.5"></circle>
+              </svg>
+            </div>
+            <div class="body col mx-3">
+              <h2>+256</h2>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col min-div w-auto my-1">
+          <div class="row content-row">
+            <div class="svg col">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-grab"
+                width="70" height="50" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M8 11v-3.5a1.5 1.5 0 0 1 3 0v2.5"></path>
+                <path d="M11 9.5v-3a1.5 1.5 0 0 1 3 0v3.5"></path>
+                <path d="M14 7.5a1.5 1.5 0 0 1 3 0v2.5"></path>
+                <path
+                  d="M17 9.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47">
+                </path>
+              </svg>
+            </div>
+            <div class="body col mx-3">
+              <h2>+256</h2>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End about -->
+  <!-- Start Features -->
+  <div class="features my-5">
+    <div class="container">
+      <div class="row" style="padding: 10px;">
+        <div class="col-sm-12 col-md-6">
+          <p class="badge bg-primary rounded-3" style="border-radius: 100px">Why choose us</p>
+          <h1 class="fs-2 fw-bold mb-5">Key Features</h1>
+          <div class="row my-3">
+            <div class="col flex-grow-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-bar"
+                width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <rect x="3" y="12" width="6" height="8" rx="1"></rect>
+                <rect x="9" y="8" width="6" height="12" rx="1"></rect>
+                <rect x="15" y="4" width="6" height="16" rx="1"></rect>
+                <line x1="4" y1="20" x2="18" y2="20"></line>
+              </svg>
+            </div>
+            <div class="col">
+              <h2 class="fs-5 fw-bold"> Expand Your Reach</h2>
+              <p class="pe-5" style="color: currentColor;">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Veritatis expedita animi. </p>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col flex-grow-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-pie"
+                width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#60a5fa"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M10 3.2a9 9 0 1 0 10.8 10.8a1 1 0 0 0 -1 -1h-6.8a2 2 0 0 1 -2 -2v-7a0.9 .9 0 0 0 -1 -.8">
+                </path>
+                <path d="M15 3.5a9 9 0 0 1 5.5 5.5h-4.5a1 1 0 0 1 -1 -1v-4.5"></path>
+              </svg>
+            </div>
+            <div class="col">
+              <h2 class="fs-5 fw-bold"> Annualized Growth</h2>
+              <p class="pe-5" style="color: currentColor;">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Veritatis expedita animi. </p>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col flex-grow-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase"
+                width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="#60a5fa"
+                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="12" y1="12" x2="12" y2="12.01"></line>
+                <path d="M3 13a20 20 0 0 0 18 0"></path>
+              </svg>
+            </div>
+            <div class="col">
+              <h2 class="fs-5 fw-bold"> Book Your Providers</h2>
+              <p class="pe-5" style="color: currentColor;">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Veritatis expedita animi. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 align-self-center">
+          <div class="imgs">
+            <div class="main-img">
+              <img class="" src="assets/images/img-1.webp" alt="">
+            </div>
+            <img class="t-tear" src="assets/images/blob-tear.svg" alt="">
+            <img class="b-tear" src="assets/images/blob-tear.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Features   -->
+  <!-- Start Team  -->
+  <div class="team my-5 p-3">
+    <div class="container">
+      <div class="content-1 row pt-5">
+        <div class="col-sm-12 col-md-6">
+          <h1>We are <span>awesome team</span> for <br> your business dream</h1>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et
+            iaculis. Quisque vitae nulla malesuada, auctor arcu vitae, luctus nisi. Sed elementum
+            vitae ligula id imperdiet.</p>
+        </div>
+      </div>
+      <div class="content-2 d-flex text-center flex-column flex-md-row">
+        <div
+          class="col card p-3 align-items-center justify-content-between me-3 my-3 border-0 shadow-sm">
+          <div class="head p-3 rounded-circle my-3">01</div>
+          <img class="img-fluid my-3" src="assets/images/eating.png" alt="eating">
+          <h2>Project Initialization</h2>
+          <p>Sed ac magna sit amet risus tristique interdum at vel velit. In hac habitasse platea
+            dictumst.</p>
+        </div>
+        <div
+          class="col  card p-3 align-items-center justify-content-between me-3 my-3 border-0 shadow-sm">
+          <div class="head p-3 rounded-circle my-3">02</div>
+          <img class="img-fluid my-3" src="assets/images/space.png" alt="space">
+          <h2>Project Initialization</h2>
+          <p>Sed ac magna sit amet risus tristique interdum at vel velit. In hac habitasse platea
+            dictumst.</p>
+        </div>
+        <div
+          class="col  card p-3 align-items-center justify-content-between me-3 my-3 border-0 shadow-sm">
+          <div class="head p-3 rounded-circle my-3">03</div>
+          <img class="img-fluid my-3" src="assets/images/tasks.png" alt="tasks">
+          <h2>Project Initialization</h2>
+          <p>Sed ac magna sit amet risus tristique interdum at vel velit. In hac habitasse platea
+            dictumst.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Team -->
+  <!-- Start Slider -->
+  <div class="my-5 py-5 slider bg-white">
+    <div class="container">
+      <div class="row main">
+        <div class="col-md-4 content-1 py-3">
+          <h1> Simple Solution for <span>Complex</span> Connections </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et
+            iaculis. </p>
+        </div>
+        <div class="col-md-8 slid">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="con-slider">
+                  <img src="assets/images/img-4.webp" alt="">
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="">
+                      <h5>New Event</h5>
+                      <p>Alibaba, show</p>
+                    </div>
+                    <div class=""><button class="btn btn-two">testing</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con-slider">
+                  <img src="assets/images/img-2.webp" alt="">
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="">
+                      <h5>New Event</h5>
+                      <p>Alibaba, show</p>
+                    </div>
+                    <div class=""><button class="btn btn-two">testing</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con-slider">
+                  <img src="assets/images/img-3.webp" alt="">
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="">
+                      <h5>New Event</h5>
+                      <p>Alibaba, show</p>
+                    </div>
+                    <div class=""><button class="btn btn-two">testing</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con-slider">
+                  <img src="assets/images/img-4.webp" alt="">
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="">
+                      <h5>New Event</h5>
+                      <p>Alibaba, show</p>
+                    </div>
+                    <div class=""><button class="btn btn-two">testing</button></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con-slider">
+                  <img src="assets/images/img-5.webp" alt="">
+                  <div class="d-flex justify-content-between mt-3">
+                    <div class="">
+                      <h5>New Event</h5>
+                      <p>Alibaba, show</p>
+                    </div>
+                    <div class=""><button class="btn btn-two">testing</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button d-none d-md-block">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Slider -->
+  <!-- Start Pricing -->
+  <div class="pricing my-5 py-5">
+    <div class="container">
+      <div class="content-header">
+        <h1 class="my-4">Start saving time today and <br> <span>choose</span> your best plan</h1>
+        <p class="my-4">Best for freelance developers who need to <br> save their time</p>
+      </div>
+      <div class="content-body justify-content-center row">
+        <div
+          class="col-12 col-md-5 col-lg my-3 card mx-2 justify-content-between align-items-center p-5 shadow-sm">
+          <img class="img-fluid py-3" src="assets/images/startup.png" alt="">
+          <h1 class="">Startup</h1>
+          <h2 class="">$45.99</h2>
+          <p class="">user per month</p>
+          <div class="pr-list">
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+          </div>
+          <div class="btns d-flex">
+            <div class="btn btn-one py-2 px-1  mx-2">Key Features</div>
+            <div class="btn btn-two py-2 px-1  mx-2">How We Work?</div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-5 col-lg my-3 card mx-2 justify-content-between align-items-center p-5 shadow-sm">
+          <img class="img-fluid py-3" src="assets/images/agency.png" alt="">
+          <h1 class="">Agency</h1>
+          <h2 class="">$65.99</h2>
+          <p class="">user per month</p>
+          <div class="pr-list ">
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+          </div>
+          <div class="btns d-flex">
+            <div class="btn btn-one py-2 px-1  mx-2">Key Features</div>
+            <div class="btn btn-two py-2 px-1  mx-2">How We Work?</div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-5 col-lg my-3 card mx-2 justify-content-between align-items-center p-5 shadow-sm">
+          <img class="img-fluid py-3" src="assets/images/enterprise.png" alt="">
+          <h1 class="">Enterprise</h1>
+          <h2 class="">$85.99</h2>
+          <p class="">user per month</p>
+          <div class="pr-list ">
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <svg class="w-6 h-6 stroke_color" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" width="24px">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="m-0 ms-2">10 GB Storage</p>
+            </div>
+          </div>
+          <div class="btns d-flex">
+            <div class="btn btn-one py-2 px-1  mx-2">Key Features</div>
+            <div class="btn btn-two py-2 px-1  mx-2">How We Work?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Pricing -->
+  <!-- Start Subscribe -->
+  <div class="subscribe mt-5">
+    <div class="container">
+      <div class="content">
+        <h1 class="">Subscribe now to <span>Our <br> Newsletter</span> and get the <br> Coupon code.
+        </h1>
+        <p class="my-3">All your information is completely confidential</p>
+        <form class="p-3 bg-white rounded-3">
+          <input class="py-2 px-3 w-25 " type="email" placeholder="Your email address">
+          <button class="btn  w-25 btn-one btn-subs mx-3 py-2 px-2 px-sm-3" type="submit">Sign
+            Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Subscribe -->
+  <!-- Start Footer -->
+  <footer class="my-5 py-5">
+    <div class="container">
+      <div class="content">
+        <div class="row  justify-content-between">
+          <div
+            class="col-12 flex-column flex-md-row text-center align-items-center col-md-6 d-flex  my-3">
+            <div class="logo w-50 m-auto me-md-5">
+              <img class="img-fluid" src="assets/images/monst-logo.svg" alt="">
+            </div>
+            <div class="help">
+              <p> Helping you <b>maximize</b>operations <br> management with digitization </p>
+            </div>
+          </div>
+          <div
+            class="col-12 flex-column flex-md-row text-center align-items-center col-md-6 d-flex  my-3 justify-content-around">
+            <div class="address">
+              <h1> Office</h1>
+              <p> 359 Hidden Valley <br> Road, NY </p>
+            </div>
+            <div class="contact">
+              <h1>Contacts</h1>
+              <p>(+01)234568 <br> contact@example.com</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row flex-column text-center align-items-center flex-md-row justify-content-between foot">
+          <div class="col  d-flex  justify-content-center">
+            <p>© <span id="yearnow"></span>. All rights reserved. Developed by <b>Steelthemes</b>
+            </p>
+          </div>
+          <div class="col justify-content-md-end gap-1 gap-md-4 d-flex   justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-facebook" width="20" height="20"
+              viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
+              </path>
+            </svg>
+            <svg stroke-linejoin="round" stroke-linecap="round" fill="none" stroke="#60a5fa"
+              stroke-width="1" viewBox="0 0 24 24" height="20" width="20"
+              class="icon icon-tabler icon-tabler-brand-twitter" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+              </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-skype"
+              width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa"
+              fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 3a9 9 0 0 1 8.603 11.65a4.5 4.5 0 0 1 -5.953 5.953a9 9 0 0 1 -11.253 -11.253a4.5 4.5 0 0 1 5.953 -5.954a8.987 8.987 0 0 1 2.65 -.396z">
+              </path>
+              <path
+                d="M8 14.5c.5 2 2.358 2.5 4 2.5c2.905 0 4 -1.187 4 -2.5c0 -1.503 -1.927 -2.5 -4 -2.5s-4 -.997 -4 -2.5c0 -1.313 1.095 -2.5 4 -2.5c1.642 0 3.5 .5 4 2.5">
+              </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-instagram" width="20" height="20"
+              viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+              <circle cx="12" cy="12" r="3"></circle>
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/monst.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      // autoplay: {
+      //   delay: 2000,
+      //   disableOnInteraction: false,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1
+        },
+        1200: {
+          slidesPerView: 2
+        }
+      }
+    });
+    console.log(swiper);
+  </script>
+</body>
+
+</html>
