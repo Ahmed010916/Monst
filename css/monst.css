@@ -23,7 +23,6 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  height: 1000px;
 }
 
 /* Start Global Rules */
@@ -393,8 +392,6 @@ a.nav-link:hover {
 /* End Team */
 /* Start Slider */
 
-.slider {
-}
 .slider .row.main {
   position: relative;
 }
@@ -457,8 +454,7 @@ a.nav-link:hover {
   font-size: 15px;
   margin: 0;
 }
-.slider .content-1 {
-}
+
 .slider .content-1 h1 {
   font-weight: bold;
   font-size: 35px;
@@ -483,9 +479,6 @@ a.nav-link:hover {
 .slider .swiper-button .swiper-button-next {
   left: 80px;
 }
-.slider .swiper-button .swiper-button-next {
-}
-
 @media (max-width: 768px) {
   .swiper-slide img {
     height: 370px;
@@ -684,5 +677,30 @@ footer .content p {
 footer .content .foot p b {
   color: var(--first-color);
 }
-
 /* End Footer */
+/*#################     Start AboutUs Page         #################*/
+
+/*#################     End AboutUs Page         #################*/
+/*#################     Start contactus Page         #################*/
+
+/*#################     End contactus Page         #################*/
+/*#################     Start Login Page         #################*/
+
+/*#################     End Login Page         #################*/
+/*#################     Start Sign Up Page         #################*/
+.bg-main {
+  background-color: var(--section-color);
+}
+.signup input {
+  background-color: var(--section-color);
+}
+.signup input::placeholder {
+  font-size: 16px !important;
+}
+
+@media (max-width: 767px) {
+  .w-50 {
+    width: 100% !important;
+  }
+}
+/*#################     End Sign Up Page         #################*/

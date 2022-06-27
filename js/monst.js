@@ -1,8 +1,10 @@
-let yearnow = document.getElementById("yearnow");
-let year = new Date().getFullYear();
-yearnow.textContent = year;
+if (document.getElementById("yearnow") != null) {
+  let yearnow = document.getElementById("yearnow");
+  let year = new Date().getFullYear();
+  yearnow.textContent = year;
 
-///////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////
+}
 let menup = document.querySelectorAll(".menup");
 let list = document.getElementById("list");
 
@@ -17,8 +19,6 @@ window.addEventListener("click", (e) => {
 menup.forEach((ee) => {
   ee.addEventListener("click", (e) => {
     menup.forEach((re) => {
-      console.log(re);
-
       re === ee ? true : re.classList.remove("open");
     });
     ee.classList.toggle("open");
