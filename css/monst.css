@@ -6,15 +6,15 @@
 }
 
 @font-face {
-  font-family: Montserrat, sans-serif;
   src: url(./../assets/fonts/Montserrat-VariableFont_wght.ttf);
+  font-family: Montserrat, sans-serif;
 }
 /* End variables */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -639,14 +639,15 @@ a.nav-link:hover {
 }
 .subscribe .content form input {
   flex: 1;
-  background-color: var(--section-color);
   border: 0;
   outline: none;
   font-size: 14px;
   color: var(--first-color);
   border-radius: 5px;
   font-weight: bold;
-  height: fit-content;
+  height: 50px;
+  border: 1px solid;
+  background-color: transparent;
 }
 .subscribe .content form input::placeholder {
   font-size: 12px;
@@ -682,10 +683,31 @@ footer .content .foot p b {
 
 /*#################     End AboutUs Page         #################*/
 /*#################     Start contactus Page         #################*/
+.section .head-content p{
+  color: gray;
+}
 
+.section .content svg{
+  color: #2563eb;
+}
+.section .content .num{
+  color: gray;
+}
 /*#################     End contactus Page         #################*/
+/*#################     Start Blog Page         #################*/
+.blog-1 img{
+  height: 320px;
+}
+.card .card-title .date {
+  font-size: 14px;
+  color: gray;
+}
+.card .card-text {
+  color: gray;
+  line-height: 1.7;
+}
+/*#################     End Blog Page         #################*/
 /*#################     Start Login Page         #################*/
-
 /*#################     End Login Page         #################*/
 /*#################     Start Sign Up Page         #################*/
 .bg-main {

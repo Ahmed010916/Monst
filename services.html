@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/monst.css" />
+    <title>Services | Monst</title>
+</head>
+
+<body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-light sticky-top">
+        <div class="container">
+            <img class="navbar-brand" style="width: 130px; max-width: 100%" src="assets/images/monst-logo.svg"
+                alt="logo" />
+            <div id="list" class="list d-none d-lg-flex">
+                <ul class="main-ul d-flex m-0 fw-bold">
+                    <li class="mx-xl-4 mx-md-3 menup">
+                        <a href="#">Home</a>
+                        <ul id="drop-menu-1" class="nav-drop-menu d-block home drop-menu">
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="index.html">Landing Page
+                                    1</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Landing Page 2</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Landing Page 3</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Landing Page 4</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mx-xl-4 mx-md-3"><a href="aboutus.html">About Us</a></li>
+                    <li class="mx-xl-4 mx-md-3 menup">
+                        <a href="#">Services</a>
+                        <ul id="drop-menu-2" class="d-block home drop-menu">
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Services Default</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Services Style 01</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Service Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mx-xl-4 mx-md-3 menup">
+                        <a href="#">Company</a>
+                        <ul id="drop-menu-3" class="d-block home drop-menu">
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Company</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Portfolio</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Team</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Testimonials</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Pricing</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Faqs</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">404</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mx-xl-4 mx-md-3 menup">
+                        <a href="#">Blog</a>
+                        <ul id="drop-menu-4" class="d-block home drop-menu">
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Blog</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Blog Default</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Blog Style 01</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Blog Style 02</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="item p-3 my-3 fw-normal" href="#">Single Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mx-xl-4 mx-md-3"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="btn-auth d-none d-lg-flex">
+                <a class="btn btn-two login mx-3" href="login.html">Login</a>
+                <a class="btn btn-one sign-up" href="signup.html">Sign Up</a>
+            </div>
+            <!-- Start Mega menu left -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Services Default</a>
+                                <a class="dropdown-item" href="#">Services Style 01</a>
+                                <a class="dropdown-item" href="#">Service Details</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Company</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Company</a>
+                                <a class="dropdown-item" href="#">Portfolio</a>
+                                <a class="dropdown-item" href="#">Team</a>
+                                <a class="dropdown-item" href="#">Testimonials</a>
+                                <a class="dropdown-item" href="#">Pricing</a>
+                                <a class="dropdown-item" href="#">Faqs</a>
+                                <a class="dropdown-item" href="#">404</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Blog</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Blog Default</a>
+                                <a class="dropdown-item" href="#">Blog Style 01</a>
+                                <a class="dropdown-item" href="#">Blog Style 02</a>
+                                <a class="dropdown-item" href="#">Single Post</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <hr />
+                    <div class="btn-auth my-4">
+                        <a class="btn btn-one sign-up" style="width: 80px" href="signup.html">Sign
+                            Up</a>
+                        <a class="btn btn-two login mx-3" style="width: 80px" href="signup.html">
+                            Login </a>
+                    </div>
+                    <hr />
+                    <div>
+                        <h5 class="fw-bold" style="word-spacing: -2px">Get In Touch</h5>
+                        <div style="display: flex; align-items: self-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 6px; margin-right: 5px"
+                                class="icon icon-tabler icon-tabler-mail-forward" width="14" height="14"
+                                viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5">
+                                </path>
+                                <path d="M3 6l9 6l9 -6"></path>
+                                <path d="M15 18h6"></path>
+                                <path d="M18 15l3 3l-3 3"></path>
+                            </svg>
+                            <p style="color: gray">name.gmail.com</p>
+                        </div>
+                        <div style="display: flex; align-items: self-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 6px; margin-right: 5px"
+                                class="icon icon-tabler icon-tabler-phone-call" width="14" height="14"
+                                viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                </path>
+                                <path d="M15 7a2 2 0 0 1 2 2"></path>
+                                <path d="M15 3a6 6 0 0 1 6 6"></path>
+                            </svg>
+                            <p style="color: gray">0123456789</p>
+                        </div>
+                        <div class="col gap-1 d-flex justify-content-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                                width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
+                                </path>
+                            </svg>
+                            <svg stroke-linejoin="round" stroke-linecap="round" fill="none" stroke="#60a5fa"
+                                stroke-width="1" viewBox="0 0 24 24" height="20" width="20"
+                                class="icon icon-tabler icon-tabler-brand-twitter" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-skype"
+                                width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M12 3a9 9 0 0 1 8.603 11.65a4.5 4.5 0 0 1 -5.953 5.953a9 9 0 0 1 -11.253 -11.253a4.5 4.5 0 0 1 5.953 -5.954a8.987 8.987 0 0 1 2.65 -.396z">
+                                </path>
+                                <path
+                                    d="M8 14.5c.5 2 2.358 2.5 4 2.5c2.905 0 4 -1.187 4 -2.5c0 -1.503 -1.927 -2.5 -4 -2.5s-4 -.997 -4 -2.5c0 -1.313 1.095 -2.5 4 -2.5c1.642 0 3.5 .5 4 2.5">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                                width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Mega menu left -->
+        </div>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start Services  -->
+
+    <!-- End Services  -->
+    <!-- Start Footer -->
+    <footer class="my-5 py-5">
+        <div class="container">
+            <div class="content">
+                <div class="row justify-content-between">
+                    <div class="col-12 flex-column flex-md-row text-center align-items-center col-md-6 d-flex my-3">
+                        <div class="logo w-50 m-auto me-md-5">
+                            <img class="img-fluid" src="assets/images/monst-logo.svg" alt="" />
+                        </div>
+                        <div class="help">
+                            <p> Helping you <b>maximize</b>operations <br /> management with
+                                digitization </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 flex-column flex-md-row text-center align-items-center col-md-6 d-flex my-3 justify-content-around">
+                        <div class="address">
+                            <h1>Office</h1>
+                            <p> 359 Hidden Valley <br /> Road, NY </p>
+                        </div>
+                        <div class="contact">
+                            <h1>Contacts</h1>
+                            <p> (+01)234568 <br /> contact@example.com </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-column text-center align-items-center flex-md-row justify-content-between foot">
+                    <div class="col d-flex justify-content-center">
+                        <p> © <span id="yearnow"></span>. All rights reserved. Developed by
+                            <b>Steelthemes</b>
+                        </p>
+                    </div>
+                    <div class="col justify-content-md-end gap-1 gap-md-4 d-flex justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3">
+                            </path>
+                        </svg>
+                        <svg stroke-linejoin="round" stroke-linecap="round" fill="none" stroke="#60a5fa"
+                            stroke-width="1" viewBox="0 0 24 24" height="20" width="20"
+                            class="icon icon-tabler icon-tabler-brand-twitter" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-skype"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M12 3a9 9 0 0 1 8.603 11.65a4.5 4.5 0 0 1 -5.953 5.953a9 9 0 0 1 -11.253 -11.253a4.5 4.5 0 0 1 5.953 -5.954a8.987 8.987 0 0 1 2.65 -.396z">
+                            </path>
+                            <path
+                                d="M8 14.5c.5 2 2.358 2.5 4 2.5c2.905 0 4 -1.187 4 -2.5c0 -1.503 -1.927 -2.5 -4 -2.5s-4 -.997 -4 -2.5c0 -1.313 1.095 -2.5 4 -2.5c1.642 0 3.5 .5 4 2.5">
+                            </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#60a5fa" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/monst.js"></script>
+</body>
+
+</html>
