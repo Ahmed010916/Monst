@@ -5,16 +5,12 @@
   --section-color: #eff3f9;
 }
 
-@font-face {
-  src: url(./../assets/fonts/Montserrat-VariableFont_wght.ttf);
-  font-family: Montserrat, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* End variables */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -22,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Start Global Rules */
@@ -682,6 +678,85 @@ footer .content .foot p b {
 /*#################     Start AboutUs Page         #################*/
 
 /*#################     End AboutUs Page         #################*/
+
+/*#################     Start Services Page         #################*/
+
+.services-header {
+  height: 40vh;
+  background-color: var(--section-color);
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.services-header .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-header .content h1{
+  font-weight: bold;
+  color: var(--second-color);
+  font-size: 50px;
+}
+.services-header .content p{
+  color: gray;
+  letter-spacing: 1px;
+}
+
+.services-header .content span{
+  color: gray;
+  margin: 0 8px;
+}
+
+
+.services-content .head-content h1 span{
+  color: var(--first-color);
+}
+
+.services-content .content .card .card-title{
+  font-weight: 800;
+  font-size: 18px;
+}
+
+
+/*#################     End   Services  Page         #################*/
+
+/*#################     Start   Protfolio  Page         #################*/
+
+.protfolio img{
+  height: 100%;
+}
+.protfolio .card-main{
+  height: 400px;
+}
+.protfolio .content-hov{
+  width: 85%;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.protfolio .content-hov .card{
+  background-color: #3b82f6;
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(-30px);
+}
+.protfolio .content-hov .card p{
+  color: white;
+}
+.protfolio .content-hov .card:hover{
+  transform: translateY(0);
+  opacity: 1;
+}
+/*#################     End   Protfolio  Page         #################*/
+
 /*#################     Start contactus Page         #################*/
 .section .head-content p{
   color: gray;
@@ -694,6 +769,7 @@ footer .content .foot p b {
   color: gray;
 }
 /*#################     End contactus Page         #################*/
+
 /*#################     Start Blog Page         #################*/
 .blog-1 img{
   height: 320px;
@@ -707,8 +783,7 @@ footer .content .foot p b {
   line-height: 1.7;
 }
 /*#################     End Blog Page         #################*/
-/*#################     Start Login Page         #################*/
-/*#################     End Login Page         #################*/
+
 /*#################     Start Sign Up Page         #################*/
 .bg-main {
   background-color: var(--section-color);
